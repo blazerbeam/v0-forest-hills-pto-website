@@ -111,9 +111,9 @@ export function Footer() {
           <div className="flex items-center gap-4">
             <Link
               href="/dues"
-              className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+              className="text-sm text-secondary-foreground/80 hover:text-secondary-foreground transition-colors"
             >
-              Pay Dues
+              Dues
             </Link>
           </div>
         </div>

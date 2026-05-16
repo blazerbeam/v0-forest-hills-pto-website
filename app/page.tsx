@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Users, Calendar, Heart, DollarSign, HelpCircle, Sparkles } from "lucide-react"
+import { ArrowRight, Users, Calendar, Heart, HelpCircle, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { GradeBadgeList } from "@/components/grade-badge"
@@ -66,10 +66,10 @@ const navTiles = [
     description: "Two organizations, two missions. Here's the difference.",
   },
   {
-    href: "/dues",
-    icon: DollarSign,
-    label: "Pay Dues",
-    description: "$75/child funds the year.",
+    href: "/future-fh",
+    icon: Sparkles,
+    label: "Future Forest Hills",
+    description: "A new school is coming. Here's what to expect.",
   },
 ]
 
@@ -122,7 +122,7 @@ export default function HomePage() {
       </section>
 
       {/* Future FH Banner */}
-      <section className="py-4 bg-accent/50 border-b border-border">
+      <section className="py-4 bg-[#FAF3E0] border-l-4 border-l-primary border-b border-border">
         <div className="container mx-auto px-4 lg:px-8">
           <Link 
             href="/future-fh" 
