@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight, Calendar, DollarSign, Users, Mail, Clock } from "lucide-react"
+import { ArrowRight, Calendar, DollarSign, Users, Mail, Clock, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { PageHeader } from "@/components/page-header"
@@ -10,21 +10,25 @@ const firstMonthCards = [
     icon: Calendar,
     title: "Check the calendar",
     description: "Events are posted by grade level. Filter to see what applies to your child.",
+    href: "/calendar",
   },
   {
     icon: DollarSign,
     title: "Pay your dues",
     description: "$75 per child funds everything from field trips to classroom supplies.",
+    href: "/dues",
   },
   {
     icon: Users,
     title: "Meet your classroom parent",
     description: "They coordinate class parties, volunteer needs, and parent communication.",
+    href: "/classroom-parents",
   },
   {
     icon: Mail,
     title: "Read the Falcon Flash",
     description: "Our weekly email newsletter keeps you in the loop. It arrives every Friday.",
+    href: "/falcon-flash",
   },
 ]
 
@@ -52,19 +56,22 @@ export default function NewFamiliesPage() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {firstMonthCards.map((card) => (
-              <Card key={card.title}>
-                <CardContent className="p-6">
-                  <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center mb-4">
-                    <card.icon className="w-5 h-5 text-accent-foreground" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-foreground">
-                    {card.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    {card.description}
-                  </p>
-                </CardContent>
-              </Card>
+              <Link key={card.title} href={card.href} className="group">
+                <Card className="h-full transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 hover:border-primary/20 cursor-pointer">
+                  <CardContent className="p-6 relative">
+                    <ChevronRight className="absolute top-4 right-4 w-5 h-5 text-muted-foreground/50 group-hover:text-primary group-hover:translate-x-0.5 transition-all" />
+                    <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center mb-4">
+                      <card.icon className="w-5 h-5 text-accent-foreground" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
+                      {card.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground mt-2">
+                      {card.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
