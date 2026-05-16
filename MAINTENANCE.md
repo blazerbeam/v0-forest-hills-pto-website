@@ -72,3 +72,12 @@ When the current maintainer rotates off the PTO:
 3. Grant them access to the v0 project (v0 has team sharing)
 4. Add them as a collaborator on this GitHub repo
 5. Make sure they have the Vercel account login
+
+### Update the Future FH timeline
+The Future FH page has a timeline of bond project milestones. The district publishes monthly updates at https://bond.losdschools.org/projects/forest-hills-elementary/project-updates. Roughly once a month, copy the latest project manager's note into a new timeline entry and remove the oldest. In v0, just say: "On the Future FH page, add a new timeline entry at the top dated [month/year] with this summary: [paste 1-2 sentences]."
+
+### Add a new sponsor
+On the Sponsors page, in the appropriate tier section, add a new sponsor card with: business name, short description, website URL, and logo (if available). In v0, just say: "On the Sponsors page in the [Falcon/Community/Friends] tier, add a sponsor: [business name], [description], [website]." Upload the logo as an image attachment in the same chat.
+
+### Update a resource link
+On the Resources page, if a district link changes, in v0 say: "On the Resources page in the [section name] section, change the link for [link title] to [new URL]."
