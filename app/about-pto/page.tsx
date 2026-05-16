@@ -158,7 +158,7 @@ export default function AboutPTOPage() {
       </section>
 
       {/* Impact Stats */}
-      <section className="py-16 lg:py-20 bg-[#FAF5EB]">
+      <section className="py-16 lg:py-20 bg-[#D4A437]/10">
         <div className="container mx-auto px-4 lg:px-8">
           <h2 className="text-2xl lg:text-3xl font-bold text-center text-foreground mb-12">
             Our Impact This Year

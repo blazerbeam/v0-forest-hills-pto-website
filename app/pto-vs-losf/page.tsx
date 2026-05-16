@@ -103,7 +103,7 @@ export default function PTOvsLOSFPage() {
       </section>
 
       {/* Simple Version Takeaway */}
-      <section className="py-10 lg:py-14 bg-[#FAF3E0]">
+      <section className="py-10 lg:py-14 bg-[#D4A437]/12">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-xl lg:text-2xl font-semibold text-foreground mb-8">
@@ -155,7 +155,7 @@ export default function PTOvsLOSFPage() {
 
       <RelatedLinks
         links={[
-          { href: "/dues", label: "Pay PTO Dues", description: "$75 per child" },
+          { href: "/dues", label: "About Dues", description: "What dues fund and how they work" },
           { href: "/about-pto", label: "About the PTO", description: "What we fund and how" },
           { href: "/board", label: "Meet the Board", description: "Your PTO leadership" },
         ]}
