@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight, Users, Calendar, Heart, DollarSign, HelpCircle, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -107,9 +108,15 @@ export default function HomePage() {
             </div>
           </div>
           
-          {/* Hero image placeholder */}
-          <div className="mt-12 aspect-[16/9] lg:aspect-[21/9] bg-muted rounded-2xl flex items-center justify-center border border-border">
-            <p className="text-muted-foreground text-sm">Hero image placeholder</p>
+          {/* Hero image */}
+          <div className="mt-12 aspect-[16/9] lg:aspect-[21/9] relative rounded-2xl overflow-hidden">
+            <Image
+              src="/school-building.jpg"
+              alt="Forest Hills Elementary School building with brick exterior and trees"
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
         </div>
       </section>
