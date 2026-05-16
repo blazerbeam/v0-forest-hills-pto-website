@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -22,17 +23,14 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <object
-              data="/logo.pdf"
-              type="application/pdf"
-              className="w-11 h-11 pointer-events-none"
-              aria-label="Forest Hills Frankie the Falcon logo"
-            >
-              {/* Fallback for browsers that don't support PDF in object */}
-              <div className="w-11 h-11 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">FH</span>
-              </div>
-            </object>
+            <Image
+              src="/frankie-logo.png"
+              alt="Frankie the Falcon - Forest Hills mascot"
+              width={44}
+              height={44}
+              className="w-11 h-11 object-contain"
+              priority
+            />
             <div className="hidden sm:block">
               <span className="font-semibold text-foreground">Forest Hills PTO</span>
             </div>
