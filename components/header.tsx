@@ -22,9 +22,17 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">FH</span>
-            </div>
+            <object
+              data="/logo.pdf"
+              type="application/pdf"
+              className="w-11 h-11 pointer-events-none"
+              aria-label="Forest Hills Frankie the Falcon logo"
+            >
+              {/* Fallback for browsers that don't support PDF in object */}
+              <div className="w-11 h-11 rounded-full bg-primary flex items-center justify-center">
+                <span className="text-primary-foreground font-bold text-lg">FH</span>
+              </div>
+            </object>
             <div className="hidden sm:block">
               <span className="font-semibold text-foreground">Forest Hills PTO</span>
             </div>
