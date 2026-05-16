@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight, Users, Heart, Receipt, Calendar, Mail } from "lucide-react"
+import { ArrowRight, Mail } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { PageHeader } from "@/components/page-header"
@@ -26,37 +26,11 @@ const pastEventSponsors: Array<{
   logoUrl?: string
 }> = []
 
-const valueProps = [
-  {
-    icon: Users,
-    title: "Reach engaged local families",
-    description:
-      "Forest Hills serves 381 students and their families in Lake Oswego. Sponsoring puts your business in front of an active, connected community.",
-  },
-  {
-    icon: Heart,
-    title: "Support what matters",
-    description:
-      "Your sponsorship funds field trips, art literacy, science programs, and community events for kids in our neighborhood.",
-  },
-  {
-    icon: Receipt,
-    title: "Tax-deductible giving",
-    description:
-      "The Forest Hills PTO is a registered 501(c)(3). Sponsorships are typically tax-deductible — check with your accountant.",
-  },
-  {
-    icon: Calendar,
-    title: "Built into our events",
-    description:
-      "We highlight sponsors at major events including our annual Gala, Carnival, Fun Run, and Science Night.",
-  },
-]
-
 const sponsorTiers = [
   {
     name: "Falcon Tier",
     amount: "$1,000+",
+    amountNote: "estimated",
     featured: true,
     benefits: [
       "Featured placement on website",
@@ -68,6 +42,7 @@ const sponsorTiers = [
   {
     name: "Community Tier",
     amount: "$500",
+    amountNote: "estimated",
     featured: false,
     benefits: [
       "Logo on website",
@@ -78,6 +53,7 @@ const sponsorTiers = [
   {
     name: "Friends of Forest Hills",
     amount: "$250",
+    amountNote: "estimated",
     featured: false,
     benefits: ["Name on website", "Recognition at major events"],
   },
@@ -104,6 +80,57 @@ export default function SponsorsPage() {
             businesses who chip in to make it possible. We&apos;re grateful for
             the partners who help us do more for our kids.
           </p>
+        </div>
+      </section>
+
+      {/* Why Partner Section */}
+      <section className="py-12 lg:py-16 bg-muted/50 border-y border-border">
+        <div className="container mx-auto px-4 lg:px-8">
+          <h2 className="text-xl lg:text-2xl font-semibold text-foreground mb-4">
+            One commitment. A year of Forest Hills.
+          </h2>
+          <p className="text-muted-foreground max-w-3xl mb-8 leading-relaxed">
+            Each year, Forest Hills hosts events that bring our community together — the Carnival, the Fun Run, the Spring Gala, and more. Traditionally, local businesses get approached multiple times across the year for separate events. We&apos;re trying something simpler: partner with us once, support all of it.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="font-semibold text-foreground mb-4">
+                  For local businesses
+                </h3>
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    One commitment instead of multiple requests
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    Consistent visibility with hundreds of engaged local families
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    A strong presence in one of the most active school communities near downtown Lake Oswego
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    Recognition across events, including signage and inclusion on Fun Run shirts (a keepsake many students wear for years)
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+            
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="font-semibold text-foreground mb-4">
+                  For Forest Hills
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  It lets us spend less time fundraising and more time supporting students, teachers, and programs that directly impact our community.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
@@ -277,40 +304,17 @@ export default function SponsorsPage() {
         </div>
       </section>
 
-      {/* Why Sponsor */}
-      <section className="py-12 lg:py-16 bg-muted/50 border-y border-border">
-        <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-xl lg:text-2xl font-semibold text-foreground mb-8">
-            Why sponsor the Forest Hills PTO
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {valueProps.map((prop) => (
-              <Card key={prop.title}>
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
-                      <prop.icon className="w-5 h-5 text-accent-foreground" />
-                    </div>
-                    <h3 className="font-semibold text-foreground">
-                      {prop.title}
-                    </h3>
-                  </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {prop.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* Sponsor Levels */}
       <section className="py-12 lg:py-16">
         <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-xl lg:text-2xl font-semibold text-foreground mb-8">
+          <h2 className="text-xl lg:text-2xl font-semibold text-foreground mb-4">
             Sponsor levels
           </h2>
+          <p className="text-muted-foreground mb-8 max-w-3xl">
+            Sponsorship levels and amounts for 2026–27 are being finalized. Here&apos;s the structure — we can also tailor something that fits your business.
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {sponsorTiers.map((tier) => (
               <Card
@@ -328,9 +332,11 @@ export default function SponsorsPage() {
                   </h3>
                   <p className="text-2xl font-bold text-foreground mt-1 mb-4">
                     {tier.amount}
-                    <span className="text-sm font-normal text-muted-foreground ml-1">
-                      (placeholder)
-                    </span>
+                    {tier.amountNote && (
+                      <span className="text-sm font-normal text-muted-foreground ml-1">
+                        ({tier.amountNote})
+                      </span>
+                    )}
                   </p>
                   <ul className="space-y-2">
                     {tier.benefits.map((benefit) => (
@@ -347,10 +353,23 @@ export default function SponsorsPage() {
               </Card>
             ))}
           </div>
-          <p className="text-sm text-muted-foreground mt-6 max-w-2xl">
-            Sponsorship levels and amounts are being finalized for 2026–27.
-            Contact us to discuss what works for your business.
-          </p>
+
+        </div>
+      </section>
+
+      {/* Tax-Deductible Callout */}
+      <section className="py-8 lg:py-12">
+        <div className="container mx-auto px-4 lg:px-8">
+          <Card className="border-border max-w-xl">
+            <CardContent className="p-5">
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Forest Hills Elementary School PTO is a 501(c)(3) nonprofit organization. Donations are tax deductible to the fullest extent of the law.
+              </p>
+              <p className="text-sm text-muted-foreground mt-2">
+                Tax ID: 93-0858044
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
@@ -359,23 +378,24 @@ export default function SponsorsPage() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-xl mx-auto text-center">
             <h2 className="text-xl lg:text-2xl font-semibold text-secondary-foreground mb-4">
-              Interested in sponsoring? Let&apos;s talk.
+              Let&apos;s talk.
             </h2>
             <p className="text-secondary-foreground/80 mb-6">
-              We&apos;d love to hear from you and find a way to partner that
-              works for your business.
+              Tell us about your business and we&apos;ll find a way to partner that works.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button asChild size="lg" variant="default">
-                <a href="mailto:sponsors@fhpto.org">
-                  <Mail className="w-4 h-4 mr-2" />
-                  Send us a message
-                </a>
-              </Button>
-              <span className="text-secondary-foreground/60 text-sm">
-                sponsors@fhpto.org
-              </span>
-            </div>
+            <Button asChild size="lg" variant="default">
+              <a href="mailto:sponsors@fhpto.org">
+                <Mail className="w-4 h-4 mr-2" />
+                Email us
+              </a>
+            </Button>
+            <p className="text-secondary-foreground/60 text-sm mt-4">
+              Or call the PTO and we&apos;ll get back to you — contact info on the{" "}
+              <Link href="/about-pto" className="underline hover:text-secondary-foreground transition-colors">
+                About page
+              </Link>
+              .
+            </p>
           </div>
         </div>
       </section>
