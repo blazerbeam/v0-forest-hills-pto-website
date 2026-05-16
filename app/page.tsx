@@ -122,24 +122,45 @@ export default function HomePage() {
       </section>
 
       {/* Calendar CTA Strip */}
-      <section className="py-10 lg:py-14 bg-[#FFFBF5]">
+      <section className="py-14 lg:py-20 bg-[#F5EFE0]">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center max-w-2xl mx-auto">
-            <h2 className="text-2xl lg:text-3xl font-bold text-foreground">
-              The 2026–27 calendar is here.
-            </h2>
+            <div className="flex items-center justify-center gap-3 mb-2">
+              <svg 
+                className="w-8 h-8 text-primary" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <path d="M16 2v4" />
+                <path d="M8 2v4" />
+                <path d="M3 10h18" />
+                <path d="M8 14h.01" />
+                <path d="M12 14h.01" />
+                <path d="M16 14h.01" />
+                <path d="M8 18h.01" />
+                <path d="M12 18h.01" />
+              </svg>
+              <h2 className="text-xl lg:text-2xl font-semibold text-foreground">
+                The 2026–27 calendar is here.
+              </h2>
+            </div>
             <p className="mt-3 text-muted-foreground text-lg">
               Twelve months of Forest Hills, all in one place.
             </p>
-            <div className="mt-6">
-              <Button asChild size="lg" className="text-base group">
+            <div className="mt-8">
+              <Button asChild size="lg" className="text-base px-8 py-6 group">
                 <Link href="/calendar">
                   See the year
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
             </div>
-            <p className="mt-4 text-sm text-muted-foreground">
+            <p className="mt-5 text-sm text-muted-foreground">
               Bookmark it. We keep it current.
             </p>
           </div>
