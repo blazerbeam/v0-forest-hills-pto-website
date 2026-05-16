@@ -12,6 +12,7 @@ const navLinks = [
   { href: "/volunteer", label: "Volunteer" },
   { href: "/board", label: "Board" },
   { href: "/about-pto", label: "About" },
+  { href: "/future-fh", label: "Future FH" },
 ]
 
 export function Header() {

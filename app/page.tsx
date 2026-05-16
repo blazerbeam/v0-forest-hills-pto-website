@@ -121,6 +121,19 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Future FH Banner */}
+      <section className="py-4 bg-accent/50 border-b border-border">
+        <div className="container mx-auto px-4 lg:px-8">
+          <Link 
+            href="/future-fh" 
+            className="flex items-center justify-center gap-2 text-sm text-foreground hover:text-primary transition-colors group"
+          >
+            <span>A new Forest Hills is coming. Learn what the rebuild means for your family</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
+      </section>
+
       {/* This Week Strip */}
       <section className="py-12 lg:py-16 bg-muted/50 border-y border-border">
         <div className="container mx-auto px-4 lg:px-8">
