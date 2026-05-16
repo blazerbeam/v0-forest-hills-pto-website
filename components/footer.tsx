@@ -6,6 +6,7 @@ const quickLinks = [
   { href: "/volunteer", label: "Volunteer" },
   { href: "/board", label: "Board" },
   { href: "/about-pto", label: "About PTO" },
+  { href: "/sponsors", label: "Sponsors" },
 ]
 
 const resourceLinks = [
