@@ -75,9 +75,9 @@ const navTiles = [
 
 // Recent wins
 const recentWins = [
+  { stat: "$60K+", label: "raised at our 2026 Spring Gala" },
+  { stat: "$500", label: "to every teacher to set up their classroom" },
   { stat: "12", label: "field trips funded this year" },
-  { stat: "$18K", label: "raised at the Spring Gala" },
-  { stat: "100%", label: "of classrooms received teacher grants" },
 ]
 
 export default function HomePage() {
@@ -206,7 +206,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-xl lg:text-2xl font-semibold">
-              What we accomplished together
+              What we did this year, together
             </h2>
             <Link
               href="/recent-wins"

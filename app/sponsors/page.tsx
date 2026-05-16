@@ -119,7 +119,7 @@ export default function SponsorsPage() {
             <Card className="border-dashed">
               <CardContent className="p-8 text-center">
                 <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-                  We&apos;re building our 2025–26 sponsor community right now.
+                  We&apos;re building our 2026–27 sponsor community right now.
                   If your business would like to be one of the first, we&apos;d
                   love to talk.
                 </p>
@@ -241,7 +241,7 @@ export default function SponsorsPage() {
             Past event sponsors
           </h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">
-            Thanks to the businesses who supported our 2024–25 Spring Gala and
+            Thanks to the businesses who supported our 2025–26 Spring Gala and
             other events. We couldn&apos;t do it without you.
           </p>
 
@@ -348,7 +348,7 @@ export default function SponsorsPage() {
             ))}
           </div>
           <p className="text-sm text-muted-foreground mt-6 max-w-2xl">
-            Sponsorship levels and amounts are being finalized for 2025–26.
+            Sponsorship levels and amounts are being finalized for 2026–27.
             Contact us to discuss what works for your business.
           </p>
         </div>
