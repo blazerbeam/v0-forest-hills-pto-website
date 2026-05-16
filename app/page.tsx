@@ -91,18 +91,18 @@ export default function HomePage() {
               Forest Hills, together.
             </h1>
             <p className="mt-6 text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              The PTO is how Forest Hills parents show up for our kids — at events, in classrooms, and behind the scenes.
+              {"At Forest Hills, parents are part of everything — in classrooms, at events, and behind the scenes. There's a place for every family, and every kind of help."}
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="text-base">
-                <Link href="/dues">
-                  Pay Your Dues — $75/child
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="text-base group">
+              <Button asChild size="lg" className="text-base group">
                 <Link href="/new-families">
                   {"I'm new here"}
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="text-base">
+                <Link href="/about-pto">
+                  What we do
                 </Link>
               </Button>
             </div>
