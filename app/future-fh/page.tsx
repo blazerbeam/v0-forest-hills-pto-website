@@ -128,10 +128,10 @@ export default function FutureFHPage() {
           <h2 className="text-2xl font-semibold text-foreground mb-6">What we know</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {whatWeKnow.map((item, index) => (
-              <Card key={index} className="bg-card">
+              <Card key={index} className="bg-[#87A878]/8 border-[#87A878]/20">
                 <CardContent className="p-6">
-                  <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center mb-4">
-                    <item.icon className="w-5 h-5 text-accent-foreground" />
+                  <div className="w-10 h-10 rounded-lg bg-[#87A878]/20 flex items-center justify-center mb-4">
+                    <item.icon className="w-5 h-5 text-[#5A7A4D]" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground">{item.title}</h3>
                   <p className="text-muted-foreground mt-2 text-sm leading-relaxed">

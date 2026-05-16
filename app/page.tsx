@@ -249,7 +249,7 @@ export default function HomePage() {
       </section>
 
       {/* Survey Callout */}
-      <section className="py-12 lg:py-16 bg-[#1B2A5B]/5">
+      <section className="py-12 lg:py-16 bg-[#87A878]/10">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="bg-card rounded-2xl border border-border p-8 lg:p-12 text-center max-w-2xl mx-auto">
             <h2 className="text-2xl lg:text-3xl font-semibold text-foreground">
@@ -280,6 +280,8 @@ export default function HomePage() {
       {/* Recent Wins Strip */}
       <section className="py-12 lg:py-16 bg-secondary text-secondary-foreground">
         <div className="container mx-auto px-4 lg:px-8">
+          {/* Gold accent line */}
+          <div className="w-12 h-1 bg-[#D4A437] rounded-full mb-6" />
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-xl lg:text-2xl font-semibold">
               What we did this year, together

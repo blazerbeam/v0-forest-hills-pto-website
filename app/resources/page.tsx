@@ -175,9 +175,12 @@ export default function ResourcesPage() {
           <div className="space-y-12">
             {resourceSections.map((section) => (
               <div key={section.heading}>
-                <h2 className="text-xl lg:text-2xl font-semibold text-foreground mb-4">
-                  {section.heading}
-                </h2>
+                <div className="flex items-center gap-3 mb-4">
+                  <h2 className="text-xl lg:text-2xl font-semibold text-foreground">
+                    {section.heading}
+                  </h2>
+                  <div className="flex-1 h-0.5 bg-[#87A878]/30 rounded-full" />
+                </div>
                 <div className="grid grid-cols-1 gap-3">
                   {section.links.map((link) => (
                     <a

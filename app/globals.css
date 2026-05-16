@@ -64,6 +64,10 @@
   --navy: #1B2A5B;
   --warm-white: #FAFAF7;
   --slate-dark: #1e293b;
+  
+  /* Accent colors (use sparingly) */
+  --warm-gold: #D4A437;
+  --sage-green: #87A878;
 }
 
 
@@ -113,6 +117,8 @@
   --color-falcon-red: var(--falcon-red);
   --color-navy: var(--navy);
   --color-warm-white: var(--warm-white);
+  --color-warm-gold: var(--warm-gold);
+  --color-sage-green: var(--sage-green);
 }
 
 @layer base {
