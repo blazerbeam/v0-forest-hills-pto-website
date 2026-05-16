@@ -4,7 +4,6 @@ import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
 
 const navLinks = [
   { href: "/new-families", label: "New Families" },
@@ -12,6 +11,7 @@ const navLinks = [
   { href: "/volunteer", label: "Volunteer" },
   { href: "/board", label: "Board" },
   { href: "/about-pto", label: "About" },
+  { href: "/dues", label: "Dues" },
   { href: "/future-fh", label: "Future FH" },
 ]
 
@@ -55,9 +55,6 @@ export function Header() {
             <Link href="/calendar" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Calendar
             </Link>
-            <Button asChild>
-              <Link href="/dues">Pay Dues</Link>
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -94,13 +91,6 @@ export function Header() {
               >
                 Calendar
               </Link>
-              <div className="pt-4 mt-4 border-t border-border">
-                <Button asChild className="w-full" size="lg">
-                  <Link href="/dues" onClick={() => setMobileMenuOpen(false)}>
-                    Pay Dues — $75/child
-                  </Link>
-                </Button>
-              </div>
             </div>
           </nav>
         </div>

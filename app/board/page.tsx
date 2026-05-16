@@ -52,7 +52,7 @@ export default function BoardPage() {
     <div>
       <PageHeader
         title="Meet the Board"
-        subtitle="The 2025–26 PTO board is made up of parent volunteers who keep things running. We're always happy to hear from you."
+        subtitle="The 2026–27 PTO board is made up of parent volunteers who keep things running. We're always happy to hear from you."
       />
 
       {/* Board Grid */}
