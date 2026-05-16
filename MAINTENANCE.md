@@ -87,3 +87,10 @@ The homepage has a "Help shape next year" survey callout linking to a Mailchimp 
 - To update the link: in v0, say "On the homepage, in the 'Help shape next year' section, change the survey link to [new URL]."
 - To hide it entirely: in v0, say "On the homepage, remove the 'Help shape next year' survey callout section."
 - To show survey results instead: we'll figure this out when the time comes — likely a link to a results summary page.
+
+- ### Set up sponsors@fhpto.org email forwarding
+The sponsors page references sponsors@fhpto.org as the contact email. This email needs to be set up via Porkbun's free email forwarding feature (Domain Management → fhpto.org → Email Forwarding). Forward sponsors@fhpto.org to whoever handles sponsorship outreach for the PTO. The same approach works for any other domain email (pto@fhpto.org, etc).
+
+## Project log
+
+- **May 15, 2026** — Site shared with PTO board as working prototype for feedback. Beta tag added to header.
