@@ -4,6 +4,11 @@ import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover"
 
 const navLinks = [
   { href: "/new-families", label: "New Families" },
@@ -23,19 +28,40 @@ export function Header() {
       <nav className="container mx-auto px-4 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <Image
-              src="/frankie-logo.png"
-              alt="Frankie the Falcon - Forest Hills mascot"
-              width={44}
-              height={44}
-              className="w-11 h-11 object-contain"
-              priority
-            />
-            <div className="hidden sm:block">
-              <span className="font-semibold text-foreground">Forest Hills PTO</span>
-            </div>
-          </Link>
+          <div className="flex items-center gap-3">
+            <Link href="/" className="flex items-center gap-3">
+              <Image
+                src="/frankie-logo.png"
+                alt="Frankie the Falcon - Forest Hills mascot"
+                width={44}
+                height={44}
+                className="w-11 h-11 object-contain"
+                priority
+              />
+              <div className="hidden sm:block">
+                <span className="font-semibold text-foreground">Forest Hills PTO</span>
+              </div>
+            </Link>
+            <Popover>
+              <PopoverTrigger asChild>
+                <button 
+                  className="hidden sm:inline-flex px-2.5 py-0.5 text-xs font-medium rounded-full bg-[#FFF4D6] text-[#8B6914] hover:bg-[#FFEDBD] transition-colors cursor-pointer"
+                  aria-label="Beta information"
+                >
+                  Beta
+                </button>
+              </PopoverTrigger>
+              <PopoverContent className="w-80 text-sm" align="start">
+                <p className="text-muted-foreground leading-relaxed">
+                  This is a working prototype of the new Forest Hills PTO site, shared with the board for feedback. Some content is placeholder. Real launch coming soon. Questions? Email{" "}
+                  <a href="mailto:pto@fhpto.org" className="text-primary hover:underline">
+                    pto@fhpto.org
+                  </a>
+                  .
+                </p>
+              </PopoverContent>
+            </Popover>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">
