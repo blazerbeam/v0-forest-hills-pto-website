@@ -81,3 +81,9 @@ On the Sponsors page, in the appropriate tier section, add a new sponsor card wi
 
 ### Update a resource link
 On the Resources page, if a district link changes, in v0 say: "On the Resources page in the [section name] section, change the link for [link title] to [new URL]."
+
+### Update or hide the homepage survey callout
+The homepage has a "Help shape next year" survey callout linking to a Mailchimp survey. When the survey closes or a new one launches:
+- To update the link: in v0, say "On the homepage, in the 'Help shape next year' section, change the survey link to [new URL]."
+- To hide it entirely: in v0, say "On the homepage, remove the 'Help shape next year' survey callout section."
+- To show survey results instead: we'll figure this out when the time comes — likely a link to a results summary page.
