@@ -201,6 +201,35 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Survey Callout */}
+      <section className="py-12 lg:py-16 bg-[#1B2A5B]/5">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="bg-card rounded-2xl border border-border p-8 lg:p-12 text-center max-w-2xl mx-auto">
+            <h2 className="text-2xl lg:text-3xl font-semibold text-foreground">
+              Help shape next year.
+            </h2>
+            <p className="mt-4 text-muted-foreground leading-relaxed">
+              {"We're still hearing from parents about what worked, what didn't, and what we should do differently. Your voice matters — even if you're new."}
+            </p>
+            <div className="mt-6">
+              <Button asChild size="lg" className="text-base group">
+                <a 
+                  href="https://us12.list-manage.com/survey?u=f2c68e6bdef7c7f3600d0542a&id=5138905a25&attribution=false"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Take the survey
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </Button>
+            </div>
+            <p className="mt-4 text-sm text-muted-foreground">
+              {"Takes about 3 minutes. Anonymous if you'd like."}
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Recent Wins Strip */}
       <section className="py-12 lg:py-16 bg-secondary text-secondary-foreground">
         <div className="container mx-auto px-4 lg:px-8">
