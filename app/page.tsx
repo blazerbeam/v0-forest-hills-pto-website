@@ -121,6 +121,31 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Calendar CTA Strip */}
+      <section className="py-10 lg:py-14 bg-[#FFFBF5]">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto">
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground">
+              The 2026–27 calendar is here.
+            </h2>
+            <p className="mt-3 text-muted-foreground text-lg">
+              Twelve months of Forest Hills, all in one place.
+            </p>
+            <div className="mt-6">
+              <Button asChild size="lg" className="text-base group">
+                <Link href="/calendar">
+                  See the year
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
+            </div>
+            <p className="mt-4 text-sm text-muted-foreground">
+              Bookmark it. We keep it current.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Future FH Banner */}
       <section className="py-4 bg-[#FAF3E0] border-l-4 border-l-primary border-b border-border">
         <div className="container mx-auto px-4 lg:px-8">
