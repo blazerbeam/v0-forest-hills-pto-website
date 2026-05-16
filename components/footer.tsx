@@ -9,6 +9,7 @@ const quickLinks = [
 ]
 
 const resourceLinks = [
+  { href: "/resources", label: "Resources" },
   { href: "/calendar", label: "Calendar" },
   { href: "/falcon-flash", label: "Falcon Flash" },
   { href: "/classroom-parents", label: "Classroom Parents" },
