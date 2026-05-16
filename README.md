@@ -1,35 +1,52 @@
-# v0-forest-hills-pto-website
+# Forest Hills PTO Website
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+A modern, parent-friendly website for the Forest Hills Elementary PTO in Lake Oswego, Oregon. Designed to replace the cluttered district-required page and make it easy for parents to find what matters — events, volunteer opportunities, who's on the board, and what the PTO actually does — without wading through walls of text.
 
-## Built with v0
+**Live site:** _coming soon_  
+**Official school PTO page (district-required):** https://fh.losdschools.org/about-forest-hills/parent-teacher-organization
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+## What this is
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_tDQQSHLn8visp3Xhx1p5xq2V5DWz)
+- Built in [v0](https://v0.app) by Vercel — a no-code/low-code tool that uses plain English prompts
+- Code is automatically synced from v0 to this GitHub repo
+- Deployed on Vercel (free tier, suitable for a PTO)
+- Designed mobile-first; most parents will read this on their phones
 
-## Getting Started
+## Who maintains it
 
-First, run the development server:
+Maintained by the Forest Hills PTO Communications role.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- **2025–2027:** Shaun Swensen (PTO President, project lead)
+- **2027 onward:** Handoff in progress — see [`MAINTENANCE.md`](./MAINTENANCE.md)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to make changes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You do not need to know how to code.
 
-## Learn More
+1. Go to the [v0 project](https://v0.app/chat/projects/prj_tDQQSHLn8visp3Xhx1p5xq2V5DWz)
+2. Start a new chat in the project
+3. Describe what you want to change in plain English (e.g. "update the dues page to say $80 per child")
+4. v0 will make the change and push it to this repo automatically
+5. Vercel will deploy the change to the live site
 
-To learn more, take a look at the following resources:
+See [`MAINTENANCE.md`](./MAINTENANCE.md) for step-by-step examples of common updates (changing events, swapping board members, etc.).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+## What's intentionally not in this repo
 
-<a href="https://v0.app/chat/api/kiro/clone/blazerbeam/v0-forest-hills-pto-website" alt="Open in Kiro"><img src="https://pdgvvgmkdvyeydso.public.blob.vercel-storage.com/open%20in%20kiro.svg?sanitize=true" /></a>
+- Parent or student contact information — that stays in our private directory tools, never in code
+- Payment processing credentials — handled by the dues processor
+- Anything connected to ParentSquare or Falcon Flash distribution lists
+
+## Tech stack
+
+For future reference if a developer ever needs to touch this directly:
+
+- Next.js (App Router) with TypeScript
+- Tailwind CSS + shadcn/ui components
+- Hosted on Vercel
+- All page routes live in `app/`
+- Shared UI components live in `components/`
+
+## Questions
+
+Email the PTO Communications chair (placeholder — to be filled in).
