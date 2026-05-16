@@ -95,32 +95,54 @@ export function Header() {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 top-16 bg-card z-40">
-          <nav className="container mx-auto px-4 py-8">
-            <div className="flex flex-col gap-2">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="px-4 py-3 text-lg font-medium text-foreground hover:bg-muted rounded-xl transition-colors"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
+        <div 
+          className="lg:hidden fixed inset-0 bg-black/50 z-40"
+          onClick={() => setMobileMenuOpen(false)}
+          aria-hidden="true"
+        />
+      )}
+
+      {/* Mobile Menu Panel */}
+      <div 
+        className={`lg:hidden fixed top-0 right-0 h-full w-[300px] max-w-[85vw] bg-card z-50 shadow-xl transform transition-transform duration-300 ease-in-out ${
+          mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <div className="flex items-center justify-between p-4 border-b border-border">
+          <span className="font-semibold text-foreground">Menu</span>
+          <button
+            type="button"
+            className="p-2 -mr-2 text-muted-foreground hover:text-foreground"
+            onClick={() => setMobileMenuOpen(false)}
+            aria-label="Close menu"
+          >
+            <X className="w-6 h-6" />
+          </button>
+        </div>
+        <nav className="p-4">
+          <div className="flex flex-col gap-1">
+            {navLinks.map((link) => (
               <Link
-                href="/calendar"
+                key={link.href}
+                href={link.href}
                 className="px-4 py-3 text-lg font-medium text-foreground hover:bg-muted rounded-xl transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Calendar
+                {link.label}
               </Link>
-            </div>
-          </nav>
-        </div>
-      )}
+            ))}
+            <Link
+              href="/calendar"
+              className="px-4 py-3 text-lg font-medium text-foreground hover:bg-muted rounded-xl transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Calendar
+            </Link>
+          </div>
+        </nav>
+      </div>
     </header>
   )
 }

@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Users, Calendar, Heart, HelpCircle, Sparkles } from "lucide-react"
+import { ArrowRight, Users, Calendar, Heart, HelpCircle, Sparkles, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { GradeBadgeList } from "@/components/grade-badge"
@@ -230,8 +230,9 @@ export default function HomePage() {
               <Link
                 key={tile.href}
                 href={tile.href}
-                className="group p-6 bg-card rounded-xl border border-border hover:border-primary/20 hover:shadow-md transition-all"
+                className="group p-6 bg-card rounded-xl border border-border hover:border-primary/20 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 relative"
               >
+                <ChevronRight className="absolute top-4 right-4 w-5 h-5 text-muted-foreground/50 group-hover:text-primary group-hover:translate-x-0.5 transition-all" />
                 <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center mb-4">
                   <tile.icon className="w-5 h-5 text-accent-foreground" />
                 </div>

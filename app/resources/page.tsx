@@ -187,7 +187,7 @@ export default function ResourcesPage() {
                       rel="noopener noreferrer"
                       className="group"
                     >
-                      <Card className="transition-colors hover:bg-muted/50">
+                      <Card className="transition-all duration-200 hover:bg-muted/50 hover:shadow-md hover:-translate-y-0.5 hover:border-primary/20 cursor-pointer">
                         <CardContent className="p-4 flex items-center justify-between gap-4">
                           <div className="min-w-0">
                             <h3 className="font-medium text-foreground group-hover:text-primary transition-colors">
@@ -197,7 +197,7 @@ export default function ResourcesPage() {
                               {link.description}
                             </p>
                           </div>
-                          <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0" />
+                          <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-0.5 transition-all flex-shrink-0" />
                         </CardContent>
                       </Card>
                     </a>
