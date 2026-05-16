@@ -94,3 +94,17 @@ The sponsors page references sponsors@fhpto.org as the contact email. This email
 ## Project log
 
 - **May 15, 2026** — Site shared with PTO board as working prototype for feedback. Beta tag added to header.
+
+- ## Project log
+
+- **May 15, 2026** — Site shared with PTO board as working prototype for feedback. Beta tag added to header. Major work completed:
+  - Homepage hero restructured around "I'm new here" as primary CTA, dues demoted from nav
+  - Real stats added ($60K+ gala, $500 teacher grants, 12 field trips)
+  - Calendar page built with illustrated annual overview + interactive list view
+  - Future FH page added with bond rebuild content
+  - Sponsors page added with 501(c)(3) info and Tax ID 93-0858044
+  - Resources page added with district links
+  - PTO vs. LOSF page added using LOSF's own "fund things / fund buildings / fund people" framing
+  - Survey callout added to homepage linking to active parent survey
+  - Board page redesigned with gradient placeholder cards (awaiting real headshots)
+  - Two accent colors introduced site-wide: warm gold (#D4A437), sage green (#87A878)
