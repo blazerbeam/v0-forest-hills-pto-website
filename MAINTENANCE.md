@@ -113,3 +113,16 @@ The sponsors page references sponsors@fhpto.org as the contact email. This email
 The site uses fhptoprez@gmail.com as the canonical contact email everywhere. When the PTO sets up email forwarding through Porkbun (Domain Management → fhpto.org → Email Forwarding), this should be replaced with a fhpto.org-based address (e.g. board@fhpto.org or info@fhpto.org).
 
 In v0, say: "Replace every instance of fhptoprez@gmail.com on the site with [new address]." v0 will do a site-wide find-and-replace.
+### Fix a specific piece of text on the site
+
+When you spot a typo, contradiction, or outdated copy on the site, the safest v0 prompt pattern is:
+
+"On the [page name] page, in the [section name] section, the text currently reads:
+'[paste exact existing text]'
+
+Replace with:
+'[new text]'
+
+Do not change anything else on the page."
+
+The 'do not change anything else' is important — without it, v0 may interpret a copy fix as a license to redesign the surrounding section.
