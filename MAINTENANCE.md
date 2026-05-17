@@ -147,3 +147,19 @@ When you make significant changes to either /at-a-glance or /calendar (new secti
 To check: open the page in Chrome, hit Cmd+P (Mac) or Ctrl+P (Windows). The print preview shows what the printed version looks like. If a new section appears in the print preview that shouldn't (like an interactive filter), or a section is missing that should be there, the print CSS needs an update.
 
 In v0, say: "On the [page name] page, the print version is showing [thing it shouldn't] / hiding [thing it should show]. Update the print CSS to fix this."
+
+### Update classroom parents
+
+When the 2026–27 room parents are confirmed in the fall, update the /classroom-parents page. In v0, say: "On the /classroom-parents page, replace the 2025–26 data with the 2026–27 data. Here's the new list: [paste data]." Also update the top informational panel to remove the "this is the 2025–26 list" disclaimer.
+
+### Update a committee chair
+
+When a committee chair changes, in v0 say: "On the /volunteer page, for the [committee name] committee, change the chair from [old name] to [new name]."
+
+### Move a "TBD — could be you" chair to a real name
+
+When someone signs up to chair a TBD committee, in v0 say: "On the /volunteer page, for [committee name], the chair is no longer TBD. The new chair is [name]."
+
+### Mark a calendar date as confirmed
+
+When the board confirms a date, in v0 say: "On the /calendar page, mark [event name] as confirmed for [specific date]. Apply the sage green '(confirmed)' tag in both Section 1 (Year at a glance) and Section 2 (Find your next event)."
