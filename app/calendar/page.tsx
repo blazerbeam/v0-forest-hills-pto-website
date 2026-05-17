@@ -13,7 +13,8 @@ import {
   Snowflake, 
   Sun, 
   Flower2,
-  Sparkles
+  Sparkles,
+  Printer
 } from "lucide-react"
 
 // Month color palette - children's book illustration style
@@ -239,6 +240,10 @@ export default function CalendarPage() {
   const grades: Grade[] = ["K", "1", "2", "3", "4", "5"]
   const categories: EventCategory[] = ["PTO", "School", "District", "Community"]
 
+  const handlePrint = () => {
+    window.print()
+  }
+
   const toggleExpanded = (eventId: string) => {
     setExpandedEvents(prev => {
       const next = new Set(prev)
@@ -278,13 +283,24 @@ export default function CalendarPage() {
       {/* SECTION 1: The Year at a Glance */}
       <section className="py-12 lg:py-16 bg-[#FFFBF5]">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-8">
-            <h2 className="text-2xl lg:text-3xl font-bold text-foreground">
-              The year at a glance
-            </h2>
-            <p className="text-sm text-muted-foreground">
-              Last updated May 15, 2026
-            </p>
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
+            <div>
+              <h2 className="text-2xl lg:text-3xl font-bold text-foreground">
+                The year at a glance
+              </h2>
+              <p className="text-sm text-muted-foreground mt-1">
+                Last updated May 15, 2026
+              </p>
+            </div>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={handlePrint}
+              className="print-hide self-start sm:self-center"
+            >
+              <Printer className="w-4 h-4 mr-2" />
+              Print this page
+            </Button>
           </div>
 
           {/* 12 Month Grid */}
@@ -370,8 +386,8 @@ export default function CalendarPage() {
         </div>
       </section>
 
-      {/* SECTION 2: Find Your Next Event */}
-      <section className="py-12 lg:py-16">
+      {/* SECTION 2: Find Your Next Event (Hidden in print - parents want the overview, not the search) */}
+      <section className="py-12 lg:py-16 print-hide">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 mb-6">
             <h2 className="text-2xl lg:text-3xl font-bold text-foreground">
@@ -602,7 +618,7 @@ export default function CalendarPage() {
       </section>
 
       {/* SECTION 3: Dates Change Footer */}
-      <section className="py-8 lg:py-10 bg-muted/50 border-t border-border">
+      <section className="py-8 lg:py-10 bg-muted/50 border-t border-border print-hide">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-2xl">
             <h3 className="font-semibold text-foreground mb-2">
@@ -617,6 +633,12 @@ export default function CalendarPage() {
           </div>
         </div>
       </section>
+
+      {/* Print-only footer */}
+      <div className="print-only print-footer">
+        <p>Forest Hills PTO — fhpto.org</p>
+        <p>Questions? fhptoprez@gmail.com</p>
+      </div>
     </div>
   )
 }

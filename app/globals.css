@@ -129,3 +129,133 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* ==========================================================================
+   PRINT STYLES
+   Applies when the page is being printed or saved as PDF.
+   Target: US Letter (8.5x11), portrait orientation.
+   ========================================================================== */
+
+@page {
+  size: letter;
+  margin: 0.5in;
+}
+
+@media print {
+  /* Force color printing */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  /* Hide site chrome */
+  header,
+  footer,
+  .print-hide {
+    display: none !important;
+  }
+
+  /* Reset body for print */
+  body {
+    background: white !important;
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Prevent awkward page breaks */
+  section,
+  .print-avoid-break {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Force page break before specific sections */
+  .print-break-before {
+    page-break-before: always;
+    break-before: page;
+  }
+
+  /* Reduce background colors to save ink */
+  .print-light-bg {
+    background-color: rgba(0, 0, 0, 0.03) !important;
+  }
+
+  /* Month cards - reduce background opacity */
+  [class*="bg-amber-50"],
+  [class*="bg-orange-50"],
+  [class*="bg-rose-50"],
+  [class*="bg-sky-50"],
+  [class*="bg-slate-50"],
+  [class*="bg-pink-50"],
+  [class*="bg-emerald-50"],
+  [class*="bg-violet-50"],
+  [class*="bg-lime-50"],
+  [class*="bg-yellow-50"],
+  [class*="bg-cyan-50"],
+  [class*="bg-[#FEF3C7]"],
+  [class*="bg-[#FFEDD5]"],
+  [class*="bg-[#FEE2E2]"],
+  [class*="bg-[#E0F2FE]"],
+  [class*="bg-[#F1F5F9]"],
+  [class*="bg-[#FCE7F3]"],
+  [class*="bg-[#D1FAE5]"],
+  [class*="bg-[#EDE9FE]"],
+  [class*="bg-[#ECFCCB]"],
+  [class*="bg-[#FEF9C3]"],
+  [class*="bg-[#CFFAFE]"] {
+    opacity: 0.7;
+  }
+
+  /* Gold tinted panels - make lighter */
+  [class*="bg-[#D4A437]"] {
+    background-color: rgba(212, 164, 55, 0.08) !important;
+  }
+
+  /* Warm backgrounds - make very light */
+  [class*="bg-[#FFFBF5]"],
+  [class*="bg-muted"] {
+    background-color: rgba(0, 0, 0, 0.02) !important;
+  }
+
+  /* Links should look like text in print */
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+
+  /* Container adjustments */
+  .container {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Show print-only elements */
+  .print-only {
+    display: block !important;
+  }
+
+  /* Print footer */
+  .print-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 9pt;
+    color: #64748b;
+    padding: 0.25in 0;
+    border-top: 1px solid #e2e8f0;
+  }
+}
+
+/* Hide print-only elements on screen */
+.print-only {
+  display: none;
+}
