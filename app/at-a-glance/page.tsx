@@ -229,11 +229,11 @@ export default function AtAGlancePage() {
         subtitle="The whole PTO, on one page. What we do, who runs it, when things happen, and how to be part of it."
       />
 
-      {/* FIX 5: Meta info panel */}
+      {/* Meta info - subtle inline style matching /calendar */}
       <section className="pb-8">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-            <div className="bg-[#87A878]/8 rounded-xl px-5 py-4 max-w-lg">
+          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+            <div>
               <p className="text-sm text-muted-foreground">
                 Last updated {today}
               </p>
@@ -245,7 +245,7 @@ export default function AtAGlancePage() {
               variant="outline"
               size="sm"
               onClick={handlePrint}
-              className="print-hide self-start sm:self-center"
+              className="print-hide self-start"
             >
               <Printer className="w-4 h-4 mr-2" />
               Print this page
