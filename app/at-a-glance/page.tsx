@@ -1,7 +1,10 @@
+"use client"
+
 import Link from "next/link"
-import { ArrowRight, ChevronRight } from "lucide-react"
+import { ArrowRight, ChevronRight, Printer } from "lucide-react"
 import { PageHeader } from "@/components/page-header"
 import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 
 // Hand-drawn style SVG icons (from about-pto)
 function PaintbrushIcon({ className }: { className?: string }) {
@@ -215,6 +218,10 @@ export default function AtAGlancePage() {
     year: "numeric" 
   })
 
+  const handlePrint = () => {
+    window.print()
+  }
+
   return (
     <div>
       <PageHeader
@@ -225,13 +232,24 @@ export default function AtAGlancePage() {
       {/* FIX 5: Meta info panel */}
       <section className="pb-8">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="bg-[#87A878]/8 rounded-xl px-5 py-4 max-w-lg">
-            <p className="text-sm text-muted-foreground">
-              Last updated {today}
-            </p>
-            <p className="text-sm text-muted-foreground mt-1">
-              Looking for something specific? Use the nav above. This page is the quick scan.
-            </p>
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div className="bg-[#87A878]/8 rounded-xl px-5 py-4 max-w-lg">
+              <p className="text-sm text-muted-foreground">
+                Last updated {today}
+              </p>
+              <p className="text-sm text-muted-foreground mt-1">
+                Looking for something specific? Use the nav above. This page is the quick scan.
+              </p>
+            </div>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={handlePrint}
+              className="print-hide self-start sm:self-center"
+            >
+              <Printer className="w-4 h-4 mr-2" />
+              Print this page
+            </Button>
           </div>
         </div>
       </section>
@@ -312,7 +330,7 @@ export default function AtAGlancePage() {
       </section>
 
       {/* SECTION 3: When — When things happen (FIX 2) */}
-      <section className="py-10 lg:py-14">
+      <section className="py-10 lg:py-14 print-break-before">
         <div className="container mx-auto px-4 lg:px-8">
           <h2 className="text-xl lg:text-2xl font-semibold text-foreground mb-6">
             When — When things happen
@@ -426,7 +444,7 @@ export default function AtAGlancePage() {
       </section>
 
       {/* SECTION 6: Want to go deeper? */}
-      <section className="py-10 lg:py-14">
+      <section className="py-10 lg:py-14 print-hide">
         <div className="container mx-auto px-4 lg:px-8">
           <h2 className="text-xl lg:text-2xl font-semibold text-foreground mb-6">
             Want to go deeper?
@@ -455,7 +473,7 @@ export default function AtAGlancePage() {
       </section>
 
       {/* Footer reminder (FIX 1: updated email) */}
-      <section className="py-8 border-t border-border">
+      <section className="py-8 border-t border-border print-hide">
         <div className="container mx-auto px-4 lg:px-8">
           <p className="text-sm text-muted-foreground text-center">
             This page is meant to be the quick view. For full details, follow the links throughout. Questions? Email{" "}
@@ -466,6 +484,12 @@ export default function AtAGlancePage() {
           </p>
         </div>
       </section>
+
+      {/* Print-only footer */}
+      <div className="print-only print-footer">
+        <p>Forest Hills PTO — fhpto.org</p>
+        <p>Questions? fhptoprez@gmail.com</p>
+      </div>
     </div>
   )
 }
