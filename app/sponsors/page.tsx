@@ -384,7 +384,7 @@ export default function SponsorsPage() {
               Tell us about your business and we&apos;ll find a way to partner that works.
             </p>
             <Button asChild size="lg" variant="default">
-              <a href="mailto:sponsors@fhpto.org">
+              <a href="mailto:fhptoprez@gmail.com">
                 <Mail className="w-4 h-4 mr-2" />
                 Email us
               </a>

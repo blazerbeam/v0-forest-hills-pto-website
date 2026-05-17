@@ -218,10 +218,10 @@ export default function ResourcesPage() {
           <p className="text-sm text-muted-foreground text-center">
             Don&apos;t see what you need? Email{" "}
             <a
-              href="mailto:pto@fhpto.org"
+              href="mailto:fhptoprez@gmail.com"
               className="text-primary hover:underline"
             >
-              pto@fhpto.org
+              fhptoprez@gmail.com
             </a>{" "}
             and we&apos;ll either add it or point you to it.
           </p>

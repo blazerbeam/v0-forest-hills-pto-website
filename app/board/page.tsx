@@ -150,10 +150,10 @@ export default function BoardPage() {
             Want to get in touch?
           </h2>
           <p className="text-muted-foreground max-w-xl">
-            Have a question or idea? Reach out to any board member directly or email us at{" "}
-            <a href="mailto:pto@foresthillspto.org" className="text-primary hover:underline">
-              pto@foresthillspto.org
-            </a>
+            Have a question or idea? The fastest way to reach the board is to email{" "}
+            <a href="mailto:fhptoprez@gmail.com" className="text-primary hover:underline">
+              fhptoprez@gmail.com
+            </a> — we&apos;ll route you to the right person.
           </p>
         </div>
       </section>

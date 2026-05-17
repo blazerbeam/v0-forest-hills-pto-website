@@ -83,10 +83,10 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li>
                 <a
-                  href="mailto:pto@foresthillspto.org"
+                  href="mailto:fhptoprez@gmail.com"
                   className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors"
                 >
-                  pto@foresthillspto.org
+                  fhptoprez@gmail.com
                 </a>
               </li>
               <li>

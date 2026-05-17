@@ -55,8 +55,8 @@ export function Header() {
               <PopoverContent className="w-80 text-sm" align="start">
                 <p className="text-muted-foreground leading-relaxed">
                   This is a working prototype of the new Forest Hills PTO site, shared with the board for feedback. Some content is placeholder. Real launch coming soon. Questions? Email{" "}
-                  <a href="mailto:pto@fhpto.org" className="text-primary hover:underline">
-                    pto@fhpto.org
+                  <a href="mailto:fhptoprez@gmail.com" className="text-primary hover:underline">
+                    fhptoprez@gmail.com
                   </a>
                   .
                 </p>
