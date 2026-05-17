@@ -107,7 +107,8 @@ const categories = [
     rotation: "rotate-0.5",
     items: [
       "Annual PTO Dues",
-      "Spring Gala",
+      "The Round-up (alternates with Spring Gala)",
+      "Fall Fun Run",
       "Sponsorships",
       "Grants",
     ],

@@ -90,7 +90,7 @@ const yearAtGlance = [
   {
     month: "May",
     year: "2027",
-    events: ["Fundraising Gala", "Staff Appreciation Week (parent led)"],
+    events: ["The Round-up — our every-other-year spring fundraiser", "Staff Appreciation Week (parent led)"],
   },
   {
     month: "June",

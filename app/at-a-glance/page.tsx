@@ -144,7 +144,7 @@ const whatCategories = [
     icon: GiftStarIcon,
     title: "Fundraising",
     color: "bg-[#F5E6C8]",
-    items: "Annual dues, Spring Gala, Fun Run, sponsorships, grants",
+    items: "Annual dues, The Round-up, Fall Fun Run, sponsorships, grants",
   },
 ]
 
@@ -170,7 +170,7 @@ const miniCalendar = [
   { month: "February", year: "2027", summary: "Friendship Day Parties, Neon Nights Dance, OBOB", season: "winter", color: "bg-[#FCE7F3]", borderColor: "border-[#DB2777]", textColor: "text-[#9D174D]" },
   { month: "March", year: "2027", summary: "Science Night, OBOB", season: "spring", color: "bg-[#D1FAE5]", borderColor: "border-[#10B981]", textColor: "text-[#065F46]" },
   { month: "April", year: "2027", summary: "Talent Show / Art Showcase", season: "spring", color: "bg-[#EDE9FE]", borderColor: "border-[#8B5CF6]", textColor: "text-[#5B21B6]" },
-  { month: "May", year: "2027", summary: "Spring Gala, Staff Appreciation Week", season: "spring", color: "bg-[#ECFCCB]", borderColor: "border-[#84CC16]", textColor: "text-[#3F6212]" },
+  { month: "May", year: "2027", summary: "The Round-up (every-other-year spring fundraiser), Staff Appreciation Week", season: "spring", color: "bg-[#ECFCCB]", borderColor: "border-[#84CC16]", textColor: "text-[#3F6212]" },
   { month: "June", year: "2027", summary: "Field Day, 5th Grade Graduation, Kinder Graduation", season: "summer", color: "bg-[#FEF9C3]", borderColor: "border-[#EAB308]", textColor: "text-[#854D0E]" },
   { month: "July", year: "2027", summary: "Summer break", season: "summer", color: "bg-[#CFFAFE]", borderColor: "border-[#06B6D4]", textColor: "text-[#0E7490]" },
 ]
@@ -375,7 +375,7 @@ export default function AtAGlancePage() {
                 <PiggyBankIcon className="w-12 h-12 text-[#D4A437] mb-4" />
                 <h3 className="text-lg font-semibold text-foreground mb-3">How we fund it</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Most of what we do is funded by dues and a handful of community events. The Spring Gala is our biggest fundraiser. The Fall Fun Run is the second largest. Dues and sponsorships round it out.
+                  Our main fundraisers are the Round-up (a western-themed event with mechanical bulls, cocktails, and BBQ) and the Fall Fun Run. The PTO alternates between the Round-up and a Spring Gala year to year. Annual dues, sponsorships, and smaller events fill in the rest.
                 </p>
                 <Link
                   href="/dues"
