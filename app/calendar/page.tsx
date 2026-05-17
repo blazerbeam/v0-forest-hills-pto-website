@@ -610,8 +610,8 @@ export default function CalendarPage() {
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Schedules shift. When something on this calendar changes, we&apos;ll mark it &quot;Recently updated&quot; and post about it in the Falcon Flash. We aim to keep this page the single source of truth — if you see something that doesn&apos;t match what you heard, please email us at{" "}
-              <a href="mailto:pto@fhpto.org" className="text-primary hover:underline">
-                pto@fhpto.org
+              <a href="mailto:fhptoprez@gmail.com" className="text-primary hover:underline">
+                fhptoprez@gmail.com
               </a>.
             </p>
           </div>

@@ -146,8 +146,8 @@ export default function VolunteerPage() {
                 Our Volunteer Coordinator can help match you with opportunities that fit your schedule and interests.
               </p>
               <Button asChild className="mt-4">
-                <Link href="mailto:volunteer@foresthillspto.org">
-                  Email our Volunteer Coordinator
+                <Link href="mailto:fhptoprez@gmail.com">
+                  Email us
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
