@@ -91,7 +91,7 @@ const yearAtGlance = [
   {
     month: "May",
     year: "2027",
-    events: ["The Round-up — our every-other-year spring fundraiser", "Staff Appreciation Week (parent led)"],
+    events: ["The Round-up — Friday, May 14 (confirmed)", "Staff Appreciation Week (parent led)"],
   },
   {
     month: "June",
@@ -226,6 +226,19 @@ const seedEvents: CalendarEvent[] = [
     grades: ["All"],
     category: "PTO",
     details: "Students parade in costume around the school. Parents and families are welcome to watch from the sidewalk.",
+  },
+  {
+    id: "8",
+    date: "May 14, 2027",
+    dayOfWeek: "Fri",
+    name: "The Round-up",
+    time: "6:00–10:00pm",
+    location: "Forest Hills",
+    description: "Our every-other-year spring fundraiser. Western-themed with mechanical bulls, cocktails, and BBQ.",
+    grades: ["All"],
+    category: "PTO",
+    confirmed: true,
+    details: "The Round-up is our big alternating-year fundraiser. Western theme, live music, mechanical bull, BBQ, cocktails, and auction. Adults-only event. Tickets go on sale in spring.",
   },
 ]
 
