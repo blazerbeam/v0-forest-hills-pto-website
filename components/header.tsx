@@ -16,6 +16,7 @@ const navLinks = [
   { href: "/volunteer", label: "Volunteer" },
   { href: "/board", label: "Board" },
   { href: "/about-pto", label: "About" },
+  { href: "/at-a-glance", label: "At a glance" },
   { href: "/dues", label: "Dues" },
   { href: "/future-fh", label: "Future FH" },
 ]

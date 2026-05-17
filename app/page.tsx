@@ -248,6 +248,29 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* At a Glance CTA Strip */}
+      <section className="py-10 lg:py-12 bg-[#87A878]/10">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="bg-card rounded-xl border border-border p-6 lg:p-8 text-center max-w-xl mx-auto">
+            <h2 className="text-lg lg:text-xl font-semibold text-foreground">
+              Need the whole picture?
+            </h2>
+            <p className="mt-2 text-muted-foreground">
+              What we do, who runs it, when things happen, all on one page.
+            </p>
+            <div className="mt-5">
+              <Link
+                href="/at-a-glance"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors group"
+              >
+                See it at a glance
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Survey Callout */}
       <section className="py-12 lg:py-16 bg-[#87A878]/10">
         <div className="container mx-auto px-4 lg:px-8">
