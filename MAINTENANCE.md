@@ -126,3 +126,17 @@ Replace with:
 Do not change anything else on the page."
 
 The 'do not change anything else' is important — without it, v0 may interpret a copy fix as a license to redesign the surrounding section.
+### Annual fundraiser swap (every other year)
+
+The PTO alternates between two spring fundraisers:
+- Even years (e.g., spring 2026, spring 2028): Spring Gala
+- Odd years (e.g., spring 2025, spring 2027): The Round-up (western-themed: mechanical bulls, cocktails, BBQ)
+
+Every spring after the event, references on the site need to be updated for next year. Key places to check:
+- /at-a-glance: "How we fund it" copy + May month card
+- /calendar: May month card in the illustrated year-at-a-glance section
+- /about-pto: Fundraising category card
+- /sponsors: intro paragraph and value-prop sections
+- Homepage stats (if you're crediting the most recent event)
+
+Historical references to the previous year's event should stay accurate (e.g., "$60K+ raised at our 2026 Spring Gala" remains valid forever, since that's what happened).
