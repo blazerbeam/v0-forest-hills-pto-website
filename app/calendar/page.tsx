@@ -50,7 +50,7 @@ const yearAtGlance = [
   {
     month: "September",
     year: "2026",
-    events: ["Coffee with the Principal", "Back to School Night", "Carnival", "Staff Appreciation kickoff", "Community Outreach card-making"],
+    events: ["Coffee with the Principal", "Back to School Night", "Fall Carnival (confirmed: Sept 25)", "Staff Appreciation kickoff", "Community Outreach card-making"],
   },
   {
     month: "October",
@@ -133,6 +133,7 @@ interface CalendarEvent {
   grades: Grade[]
   category: EventCategory
   recentlyUpdated?: boolean
+  confirmed?: boolean
   details?: string
 }
 
@@ -164,7 +165,7 @@ const seedEvents: CalendarEvent[] = [
   },
   {
     id: "3",
-    date: "Sep 18, 2026",
+    date: "Sep 25, 2026",
     dayOfWeek: "Fri",
     name: "Fall Carnival",
     time: "5:00–7:30pm",
@@ -172,6 +173,7 @@ const seedEvents: CalendarEvent[] = [
     description: "Games, food, and fun for the whole family.",
     grades: ["All"],
     category: "PTO",
+    confirmed: true,
     details: "Our biggest fall event! Carnival games, bounce houses, face painting, food trucks, and more. Volunteers needed — sign up on the volunteer page.",
   },
   {
@@ -490,6 +492,11 @@ export default function CalendarPage() {
                             <h3 className="font-semibold text-foreground">
                               {event.name}
                             </h3>
+                            {event.confirmed && (
+                              <span className="px-2 py-0.5 bg-[#87A878] text-white text-xs font-medium rounded-full">
+                                Confirmed
+                              </span>
+                            )}
                             {event.recentlyUpdated && (
                               <span className="px-2 py-0.5 bg-amber-100 text-amber-800 text-xs font-medium rounded-full">
                                 Recently updated
