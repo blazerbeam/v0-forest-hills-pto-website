@@ -140,3 +140,10 @@ Every spring after the event, references on the site need to be updated for next
 - Homepage stats (if you're crediting the most recent event)
 
 Historical references to the previous year's event should stay accurate (e.g., "$60K+ raised at our 2026 Spring Gala" remains valid forever, since that's what happened).
+### Update the print version of /at-a-glance or /calendar
+
+When you make significant changes to either /at-a-glance or /calendar (new sections, major copy edits, new visual elements), you should also check that the printed version still looks right.
+
+To check: open the page in Chrome, hit Cmd+P (Mac) or Ctrl+P (Windows). The print preview shows what the printed version looks like. If a new section appears in the print preview that shouldn't (like an interactive filter), or a section is missing that should be there, the print CSS needs an update.
+
+In v0, say: "On the [page name] page, the print version is showing [thing it shouldn't] / hiding [thing it should show]. Update the print CSS to fix this."
