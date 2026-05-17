@@ -109,3 +109,66 @@ These are flagged but not yet built or decided:
 - Possible board page redesign once real photos arrive
 - "About PTO" page visual refresh (deferred, may revisit later)
 - The board page gradient density may be too loud once real photos don't replace it — monitor
+
+- ---
+
+## Session log
+
+This section tracks substantive work sessions. Newest at top.
+
+### Session 2 — May 17, 2026
+
+Picked up after board feedback from initial prototype share. Key board signals: keep it simple, make it maintainable for future board members, ~90% of content should be evergreen.
+
+**What got built:**
+- New `/at-a-glance` dashboard page — consolidates what/who/when/how on one page for parents who want the quick scan. Six sections: What the PTO does, Who runs the PTO, When things happen (mini illustrated calendar), How it works, Quick facts (with $12K+ classroom startup stat), Want to go deeper. Includes homepage link.
+- `/classroom-parents` populated with real 2025–26 data. K–5 only (excluded Pre-K). Names only, no emails. Leads shown prominently with "Also helping:" line for supporters. Grade filter chips.
+- `/volunteer` rebuilt with 17 real committees split into Ongoing vs. Seasonal & Event sections. Chair names where known, "TBD — could be you" for openings. Email-to-join CTAs with pre-filled subject lines.
+- Site-wide email change to `fhptoprez@gmail.com` (one real, monitored address) — replaced placeholder role-based addresses everywhere.
+- Calendar updates: Sept 25 Carnival marked confirmed, May 14 Round-up marked confirmed.
+- Content corrections: Round-up vs. Spring Gala alternation (every other year), Fall Fun Run becoming a fundraiser starting 2026–27.
+- Print CSS added to `/at-a-glance` and `/calendar` — browser-print path, hides nav/footer, adds print-only contact line.
+- Visual refinements: subtler "Last updated" treatment on `/at-a-glance` matching the calendar's pattern.
+- MAINTENANCE.md restructured into clear sections: common updates, annual checklist, fundraiser swap recipe, operational setup, project log.
+
+**Key decisions this session:**
+- **No personal cell phones published.** Board contact stays at `fhptoprez@gmail.com`. Personal emails not on site.
+- **No AI-generated faces or stock photos of people.** Board page gradient placeholders stay until real headshots arrive.
+- **Print CSS = "good enough."** Browser-print path with hidden nav/footer. Not building a real PDF generator. Saved PDFs are clean even though print previews look rougher.
+- **Maintenance simplicity > feature richness.** Following the board's signal, declined to add features that increase ongoing edit burden.
+- **Role-based emails deferred.** Single `fhptoprez@gmail.com` for now. When Porkbun email forwarding is set up, replace with `*@fhpto.org` addresses sitewide via simple v0 find-and-replace.
+
+**Board feedback received during session:**
+- Kathryn: "Love it! Keep it as simple as possible and easier than easy to maintain for future board members."
+- Iris: "Like 90% should be fairly evergreen info."
+- Others: positive without specifics.
+
+Shaun's response: framed the project as a 3-hour evening build, committed to maintaining for a trial year, will measure usage before scaling.
+
+### Session 1 — May 15–16, 2026
+
+Initial site build and first board share. See full project log in MAINTENANCE.md.
+
+---
+
+## What's queued / unresolved
+
+Updated end of Session 2. Still pending:
+
+- **Real board headshots.** Gradient placeholders still in place on `/board`.
+- **Real classroom parents for 2026–27.** Current list is 2025–26 with disclaimer.
+- **Real sponsors.** Empty state still showing on `/sponsors`.
+- **More confirmed 2026–27 calendar dates.** Sept 25 and May 14 confirmed. Rest still estimates.
+- **Email forwarding setup at Porkbun.** Will let us replace `fhptoprez@gmail.com` with `*@fhpto.org` addresses sitewide.
+- **"Ways to help" homepage section.** Still queued from the original survey insights — addressing "I'd help but I don't know how" / fear-of-volun-told theme.
+- **Real photos throughout.** Forest Hills photos for hero areas, event photos, etc.
+- **Board page gradient density.** May feel too loud once real photos arrive. Monitor.
+- **Possible business question.** Whether to offer this as a service to other PTOs (separate conversation, not blocking).
+
+## Open conversations
+
+Things mentioned but not decided:
+
+- **Whether dues continue at all.** Some on the board are reconsidering. Site is structured to make demotion easy if it goes that way.
+- **Falcon Flash future.** Survey signal was "monthly summary vs. weekly firehose." Not a website decision yet but related.
+- **Personal-site mention.** Shaun is adding fhpto.org as a "What I'm Building" entry on jeremymyrland.com.
