@@ -108,3 +108,8 @@ The sponsors page references sponsors@fhpto.org as the contact email. This email
   - Survey callout added to homepage linking to active parent survey
   - Board page redesigned with gradient placeholder cards (awaiting real headshots)
   - Two accent colors introduced site-wide: warm gold (#D4A437), sage green (#87A878)
+### Update the PTO contact email
+
+The site uses fhptoprez@gmail.com as the canonical contact email everywhere. When the PTO sets up email forwarding through Porkbun (Domain Management → fhpto.org → Email Forwarding), this should be replaced with a fhpto.org-based address (e.g. board@fhpto.org or info@fhpto.org).
+
+In v0, say: "Replace every instance of fhptoprez@gmail.com on the site with [new address]." v0 will do a site-wide find-and-replace.
