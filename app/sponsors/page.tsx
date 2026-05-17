@@ -90,7 +90,7 @@ export default function SponsorsPage() {
             One commitment. A year of Forest Hills.
           </h2>
           <p className="text-muted-foreground max-w-3xl mb-8 leading-relaxed">
-            Each year, Forest Hills hosts events that bring our community together — the Carnival, the Fun Run, the Spring Gala, and more. Traditionally, local businesses get approached multiple times across the year for separate events. We&apos;re trying something simpler: partner with us once, support all of it.
+            Each year, Forest Hills hosts events that bring our community together — the Fall Carnival, the Fun Run, our spring fundraiser, and more. Traditionally, local businesses get approached multiple times across the year for separate events. We&apos;re trying something simpler: partner with us once, support all of it.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
